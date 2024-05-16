@@ -1,0 +1,15 @@
+<br>
+<input type="text" #newDay>
+<br><br>
+<button (click)= "dia = newDay.value">Mostrar dia</button>
+<br><br>
+<div [ngSwitch]="dia">
+<span *ngSwitchCase="1">Lunes</span>
+<span *ngSwitchCase="2">Martes</span>
+<span *ngSwitchCase="3">Miercoles</span>
+<span *ngSwitchCase="4">Jueves</span>
+<span *ngSwitchCase="5">Viernes</span>
+<span *ngSwitchCase="6">Sabado</span>
+<span *ngSwitchCase="7">Domingo</span>
+<span *ngSwitchDefault>Valor no valido</span>
+</div>
